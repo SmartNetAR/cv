@@ -44,3 +44,10 @@ ul {
 ul.habilidades {
   background-color: #ff502f;
 }
+
+ul li ul {
+  padding-top: 0.3rem;
+  padding-bottom: 0.5rem;
+  color: whitesmoke;
+  font-size: 0.9rem;
+}
