@@ -16,8 +16,6 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
   line-height: 1.5em;
-  margin-left: 10%;
-  margin-right: 10%;
   padding: 1em;
   /* width: 70%; */
   background-color: #4361ee;  
@@ -27,7 +25,7 @@ body {
   display: none;
 }
 
-@media(min-width: 321px) {
+@media(min-width: 376px) {
   #perfil {
     display: block;
     width: 150px;
@@ -35,6 +33,11 @@ body {
     border-radius: 150px;
     float: right;
     margin: 20px;
+  }
+
+  .content {
+    margin-left: 7%;
+    margin-right: 7%;
   }
 }
 
@@ -68,6 +71,10 @@ ul {
   padding: 2em;
 }
 
+.laboral .digichanges {
+  font-size: large;
+}
+
 ul.habilidades {
   background-color: #f72585;
 }
@@ -96,4 +103,30 @@ ul li ul {
   padding-bottom: 0.5rem;
   color: whitesmoke;
   font-size: 1.2rem;
+}
+
+.digichanges ul {
+  display: flex;
+  align-items: center;
+}
+
+.digichanges ul li {
+  list-style: none;
+  margin-right: 1em;
+}
+
+.digichanges ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  position: relative;
+}
+
+footer .correo {
+  width: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }
