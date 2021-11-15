@@ -1,53 +1,99 @@
+* {
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
 body {
-  background-color: #5bd1d7;
+  background-color: #4cc9f0;
   min-width: 320px;
 }
 
 .content {
   font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5em;
   margin-left: 10%;
   margin-right: 10%;
-  padding: 10px;
+  padding: 1em;
   /* width: 70%; */
-  background-color: #004d61;  
+  background-color: #4361ee;  
 }
 
 #perfil {
-  width: 200px;
-  height: 200px;
-  border-radius: 150px;
-  float: right;
-  margin: 20px;
+  display: none;
+}
+
+@media(min-width: 321px) {
+  #perfil {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    float: right;
+    margin: 20px;
+  }
+}
+
+@media(min-width: 749px) {
+  #perfil {
+    display: block;
+    width: 200px;
+    height: 200px;
+  }
 }
 
 h1 {
   text-align: center;
   font-weight: bold;
-  font-size: 28px;
-  margin-bottom: 30px;
-}
-
-h1, h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1em;
   color: #ff502f;
 }
 
-h3 {
+h2 {
+  color: antiquewhite;
+}
+
+h3, h4 {
   color: #5bd1d7;
 }
 
 ul {
   color: #fff;
-  background-color: #348498;
-  padding: 20px;
+  background-color: #3a0ca3;
+  padding: 2em;
 }
 
 ul.habilidades {
-  background-color: #ff502f;
+  background-color: #f72585;
+}
+
+ul.mas-habilidades {
+  background-color: #7209b7;
+}
+
+.redes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.redes li {
+  list-style: none;
+}
+
+.redes li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 ul li ul {
   padding-top: 0.3rem;
   padding-bottom: 0.5rem;
   color: whitesmoke;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
